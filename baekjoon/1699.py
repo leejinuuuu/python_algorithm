@@ -22,3 +22,5 @@ for i in range(1, N+1):
             DP[i] = DP[i-j**2]+1
 
 print(DP[N])
+
+# 참고 : https://jyeonnyang2.tistory.com/50
