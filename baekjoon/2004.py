@@ -17,3 +17,5 @@ def five_count(n):
     return five
 
 print(min(two_count(n) - two_count(n - m) - two_count(m), five_count(n) - five_count(n - m) - five_count(m)))
+
+# 참고 : https://tmdrl5779.tistory.com/95
