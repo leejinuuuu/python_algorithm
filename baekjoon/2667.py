@@ -5,6 +5,7 @@ num = []
 for i in range(n):
     graph.append(list(map(int, input())))
 
+# 상하좌우를 구현하기 위함
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
@@ -14,7 +15,7 @@ def DFS(x, y):
         return False
 
     if graph[x][y] == 1:
-        global count
+        global count # 외부에서 선언된 count라는 함수를 global 변수로 재선언함으로써 접근가능해짐
         count += 1
         graph[x][y] = 0
         for i in range(4):
